@@ -1,4 +1,13 @@
 /**
+ * Register the service worker
+ */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('service_worker.js');
+  });
+}
+
+/**
  * Common database helper functions.
  */
 class DBHelper {
