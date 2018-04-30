@@ -9,27 +9,27 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1><a href="/" tabindex="-1" aria-label="Restaurant Reviews Link">Restaurant Reviews</a></h1>
+  <header role="heading">
+    <nav role="navigation">
+      <h1><a href="/" tabindex="-1" role="link" aria-label="Restaurant Reviews">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main id="maincontent">
-    <section id="map-container" aria-label="map">
+  <main id="maincontent" role="main">
+    <section id="map-container" role="region" aria-label="map">
       <div id="map" role="application"></div>
     </section>
-    <section>
+    <section role="region">
       <div class="filter-options">
         <h2 aria-label="filter restaurants">Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="1" aria-label="filter restaurants by neighborhood select">
-          <option value="all">All Neighborhoods</option>
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="1" role="listbox" aria-label="filter restaurants by neighborhood select">
+          <option value="all" role="option">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="2"aria-label="filter restaurants by cuisines select">
-          <option value="all">All Cuisines</option>
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="2" role="listbox" aria-label="filter restaurants by cuisines select">
+          <option value="all" role="option">All Cuisines</option>
         </select>
       </div>
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" role="list"></ul>
     </section>
   </main>
 
@@ -39,7 +39,7 @@
 
 
   <footer id="footer">
-    Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2018 <a href="/" role="link" aria-label="Home page"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
 </body>
